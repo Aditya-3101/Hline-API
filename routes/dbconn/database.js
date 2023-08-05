@@ -8,6 +8,7 @@ module.exports = function () {
       user: "u59dm4pznjbqrdif",
       password: "lzkJeNoeRlGKzyaquymH",
       database: "bawsid2ij5moefmc4vkg",
+      port: 3306,
     });
   }
   return conn;

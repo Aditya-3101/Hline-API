@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
   connection.query("SELECT * FROM donors", (err, rows, fields) => {
     if (err) {
       res.status(404);
-      throw err;
+      res.json(err);
     } else {
       res.status(200);
       res.json(rows);
